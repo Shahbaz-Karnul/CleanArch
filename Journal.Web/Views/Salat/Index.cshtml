@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Journal.Web.Models.Salat.SalatModel>
+
+<h1>Salats</h1>
+<table class="table-bordered table-hover table-responsive">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Din</th>
+            <th scope="col">Fajr</th>
+            <th scope="col">Zohr</th>
+            <th scope="col">Asr</th>
+            <th scope="col">Maghreb</th>
+            <th scope="col">Isha</th>
+            <th scope="col">Remarks</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var salat in Model)
+        {
+            <tr class="fs-8">
+                <th scope="row">@salat.Id</th>
+                <td>@salat.Din</td>
+                <td>@salat.Fajr</td>
+                <td>@salat.Zohr</td>
+                <td>@salat.Asar</td>
+                <td>@salat.Maghreb</td>
+                <td>@salat.Isha</td>
+                <td>@salat.Remarks</td>
+              
+            </tr>
+        }
+    </tbody>
+</table>

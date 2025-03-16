@@ -17,7 +17,8 @@ namespace Journal.Application.Services.Salats
 
         Task ISalatService.AddAsync(Salat salat)
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
+           return _repository.AddAsync(salat);
         }
 
         Task ISalatService.DeleteAsync(int id)

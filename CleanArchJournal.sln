@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Journal.API", "Journal.API\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Journal.Web", "Journal.Web\Journal.Web.csproj", "{963B6458-67E0-40B2-B19E-61EE107AC7BB}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Journal", "Journal\Journal.sqlproj", "{3C88B1DA-AF6E-499E-A7DE-D047E820420A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,12 @@ Global
 		{963B6458-67E0-40B2-B19E-61EE107AC7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{963B6458-67E0-40B2-B19E-61EE107AC7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{963B6458-67E0-40B2-B19E-61EE107AC7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C88B1DA-AF6E-499E-A7DE-D047E820420A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C88B1DA-AF6E-499E-A7DE-D047E820420A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C88B1DA-AF6E-499E-A7DE-D047E820420A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C88B1DA-AF6E-499E-A7DE-D047E820420A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C88B1DA-AF6E-499E-A7DE-D047E820420A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C88B1DA-AF6E-499E-A7DE-D047E820420A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

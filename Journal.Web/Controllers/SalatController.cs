@@ -20,7 +20,22 @@ namespace Journal.Web.Controllers
 			return View(lstsalat);
 		}
 
+        // GET: Products/Create
+		public IActionResult Create()
+		 { return View(); }
 
+        // POST: Products/Create
+		[HttpPost] [ValidateAntiForgeryToken] 
+		public async Task<IActionResult> Create([Bind("Id,Din,Fajr,Zohr,Asr,Maghreb,Isha,Remarks")] SalatModel salat)
+		{ if (ModelState.IsValid) 
+			{
+				//_context.Add(product); 
+				 await _salatService.AddAsync(salat);
+							            
+				return RedirectToAction(nameof(Index));
+			} 
+			return View(salat);
+		}
 
-	}
+    }
 }

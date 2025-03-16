@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<Journal.Web.Models.Salat.SalatModel>
 
 <h1>Salats</h1>
+<p> <a asp-action="Create" class="btn btn-primary">Create New</a></p>
 <table class="table-bordered table-hover table-responsive">
     <thead class="thead-dark">
         <tr>
@@ -22,7 +23,7 @@
                 <td>@salat.Din</td>
                 <td>@salat.Fajr</td>
                 <td>@salat.Zohr</td>
-                <td>@salat.Asar</td>
+                <td>@salat.Asr</td>
                 <td>@salat.Maghreb</td>
                 <td>@salat.Isha</td>
                 <td>@salat.Remarks</td>

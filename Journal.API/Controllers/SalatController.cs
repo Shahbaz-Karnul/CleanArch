@@ -22,6 +22,19 @@ namespace Journal.API.Controllers
 		{
 			var salat = await _salatService.GetAllAsync();
 			return Ok(salat);
+		}   
+
+		//Post: api/<SalatController>
+		[HttpPost]
+		public async Task <ActionResult<Salat>> PostAsync(Salat salat) 
+		{
+			   await _salatService.AddAsync(salat);
+
+			//return RedirectToAction("GetActionResultAsync");
+
+			//return CreatedAtAction("GetActionResultAsync", salat);
+			return Ok(salat);
+			
 		}
 		
 	}

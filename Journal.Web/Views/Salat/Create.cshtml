@@ -1,0 +1,56 @@
+﻿@model Journal.Web.Models.Salat.SalatModel; 
+
+@{ ViewData["Title"] = "Create Salat"; } 
+
+<h4>Salat</h4> 
+
+<div class="col-md-4"> <form asp-action="Create">
+
+        <div class="form-group">
+            <label asp-for="Din" class="control-label"></label>
+            <input asp-for="Din" class="form-control" />
+            <span asp-validation-for="Din" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+        <label asp-for="Fajr" class="control-label"></label> 
+        <input asp-for="Fajr" class="form-control" />
+        <span asp-validation-for="Fajr" class="text-danger"></span>
+    </div> 
+    <div class="form-group">
+        <label asp-for="Zohr" class="control-label"></label> 
+        <input asp-for="Zohr" class="form-control" />
+        <span asp-validation-for="Zohr" class="text-danger"></span>
+    </div>
+
+        <div class="form-group">
+            <label asp-for="Asr" class="control-label"></label>
+            <input asp-for="Asr" class="form-control" />
+            <span asp-validation-for="Asr" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="Maghreb" class="control-label"></label>
+            <input asp-for="Maghreb" class="form-control" />
+            <span asp-validation-for="Maghreb" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Isha" class="control-label"></label>
+            <input asp-for="Isha" class="form-control" />
+            <span asp-validation-for="Isha" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Remarks" class="control-label"></label>
+            <input asp-for="Remarks" class="form-control" />
+            <span asp-validation-for="Remarks" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+     </div> 
+    </form>
+    </div> 
+    </div> 
+    <div> <a asp-action="Index">Back to List</a>

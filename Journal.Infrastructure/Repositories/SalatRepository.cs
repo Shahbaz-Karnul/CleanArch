@@ -28,9 +28,12 @@ namespace Journal.Infrastructure.Repositories
             _context = context;
         }
 
-        Task ISalatRepository.AddAsync(Salat salat)
+        async Task ISalatRepository.AddAsync(Salat salat)
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
+           _context.Salats.Add(salat);
+           await _context.SaveChangesAsync();
+                 
         }
 
         Task ISalatRepository.DeleteAsync(int id)
